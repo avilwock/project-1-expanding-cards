@@ -32,6 +32,7 @@ body {
     margin: 10px;
     /*has to be relative so the h3 inside can be absolute*/
     position: relative;
+    /*does a nice ease in and slowly appears after .7 seconds*/
     transition: flex 0.7s ease-in; 
 }
 
@@ -43,7 +44,7 @@ body {
     margin: 0;
     opacity: 0;
 }
-
+/*increases the active panel to 3 and leaves others as 3*/
 .panel.active {
     flex: 5;
 }
@@ -58,7 +59,7 @@ body {
     .container {
         width: 100vw;
     }
-
+    /*if page size is small, it only shows 3 of the images in panel form instead of 4*/
     .panel:nth-of-type(4), 
     .panel:nth-of-type(5) {
         display: none;

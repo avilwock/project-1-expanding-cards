@@ -8,7 +8,6 @@ console.log(panels[0])
 panels.forEach((panel) => {
     console.log(panel)
     panel.addEventListener('click', () => {
-        // console.log(123)
         removeActiveClasses()
         panel.classList.add('active')
     })
